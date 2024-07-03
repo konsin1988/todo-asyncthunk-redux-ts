@@ -1,0 +1,40 @@
+@import './../../styles/index';
+
+.li {
+    @extend .my-flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    position: relative;
+    font-size: 1.1rem;
+    padding: 2px;
+    &:first-child {
+        margin-top: 5px;
+    }
+}
+
+.cross {
+    color: red;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: -10px;
+    font-size: 2rem;
+    transition: all 0.1s;
+    &:hover {
+        opacity: .9;
+        color: rgb(215, 131, 131);
+    }
+    &:active {
+        transform: scale(.5);
+        color: wheat;
+    }
+}
+.text {
+    font-style: italic;
+}
+.checkbox {
+    margin: 5px;
+    &:checked + span {
+        text-decoration: line-through;
+    }
+}

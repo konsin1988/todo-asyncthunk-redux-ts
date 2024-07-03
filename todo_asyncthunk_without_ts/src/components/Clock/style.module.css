@@ -1,0 +1,9 @@
+.clock {
+    position: absolute;
+    top: 150px;
+    left: 80%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white    ;
+
+}

@@ -1,0 +1,25 @@
+@import '../../styles/index';
+
+.button {
+    border-radius: 20px;
+    border: $border;
+    padding: 3px 6px;
+    background: rgb(155, 177, 198);
+    color: $primary;
+    &:hover {
+        opacity: 80%;
+        border: 1px solid white;
+    }
+    &:active {
+
+        transform: scale(.95);
+    }
+}
+
+.input {
+    border: $border;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 5px 7px;
+    outline: none;
+}
