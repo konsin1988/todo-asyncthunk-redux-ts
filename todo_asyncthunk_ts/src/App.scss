@@ -1,0 +1,7 @@
+@import './styles/index';
+
+.main {
+    @extend .my-flex;
+    flex-direction: column;
+}
+

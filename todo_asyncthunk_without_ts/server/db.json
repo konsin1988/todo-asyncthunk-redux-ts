@@ -1,0 +1,40 @@
+{
+  "todos": [
+    {
+      "id": "4b1b",
+      "title": "learn React",
+      "userId": 1,
+      "completed": false
+    },
+    {
+      "id": "d2b4",
+      "title": "learn TS",
+      "userId": 1,
+      "completed": true
+    },
+    {
+      "id": "e53e",
+      "title": "go for a walk",
+      "userId": 1,
+      "completed": false
+    },
+    {
+      "id": "5e53",
+      "title": "learn RTK query",
+      "userId": 1,
+      "completed": false
+    },
+    {
+      "id": "edbc",
+      "title": "make some pictures",
+      "userId": 1,
+      "completed": true
+    },
+    {
+      "id": "5f99",
+      "title": "play guitar",
+      "userId": 1,
+      "completed": false
+    }
+  ]
+}

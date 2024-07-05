@@ -1,0 +1,28 @@
+{
+  "todos": [
+    {
+      "id": "4b1b",
+      "title": "learn React",
+      "userId": 1,
+      "completed": false
+    },
+    {
+      "id": "5f99",
+      "title": "play guitar",
+      "userId": 1,
+      "completed": false
+    },
+    {
+      "id": "5b40",
+      "title": "start doing exercises",
+      "userId": 1,
+      "completed": true
+    },
+    {
+      "id": "95b4",
+      "title": "skating a little bit more",
+      "userId": 1,
+      "completed": false
+    }
+  ]
+}

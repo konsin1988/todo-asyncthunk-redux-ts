@@ -6,7 +6,7 @@ export const fetchTodos = createAsyncThunk(
         rejectWithValue
     }) {
         try {
-            const response = await fetch ('https://jsonplaceholder.typicode.com/todos?_limit=10')
+            const response = await fetch ('http://localhost:3001/todos')
 
             if(!response.ok) {
                 throw new Error('Server Error')
@@ -23,7 +23,7 @@ export const deleteTodo = createAsyncThunk(
     'todos/deleteTodo',
     async function({id}, {rejectWithValue, dispatch}) {
         try {
-            const response = await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`, {
+            const response = await fetch(`http://localhost:3001/todos/${id}`, {
                 method: 'DELETE',
             })
 
@@ -45,7 +45,7 @@ export const toggleStatus = createAsyncThunk(
         const todo = getState().todos.todos.find(todo => todo.id === id)
         
         try {
-            const response = await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`, {
+            const response = await fetch(`http://localhost:3001/todos/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ export const addNewTodo = createAsyncThunk(
                 userId: 1,
                 completed: false,
             }
-            const response = await fetch(`https://jsonplaceholder.typicode.com/todos/`,
+            const response = await fetch(`http://localhost:3001/todos/`,
                 {
                     method: 'POST', 
                     headers: {
